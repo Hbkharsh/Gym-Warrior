@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Warrior</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .header{
+            position: sticky;
+        }
+      body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(img/background.jpg);
+      }
+      .left{
+         position: absolute;
+         font-size: 20px;
+           line-height: 19px;
+        left: 70px;
+        top: 20px;
+        display: inline-block;
+           /* border: 2px solid red; */
+      }
+      .left img{
+        display: block;
+        margin: auto;
+        width: 33px;
+        filter: invert(100);
+      }
+      .mid{
+        display: block;
+        width: 43%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+      }
+      .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+         display: inline-block;
+        /* border: 2px solid yellow; */
+      }
+         
+      .navbar{
+        display: inline-block;
+      }
+      .navbar li{
+        
+        display: inline-block;
+        font-size: 15px;
+
+      }
+
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 29px;
+      }
+
+      .navbar li a:hover , .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+      }
+
+      .btn{
+        margin: 10px 10px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .btn:hover{
+        background-color: grey;
+      }
+
+      .container{
+        /* border: 2px solid white; */
+        margin: 110px auto;
+        padding: 40px 39px;
+        border-radius: 20px;
+        width: 33%;
+      }
+
+      .form_group input{
+            text-align: center;
+            display: block;
+            width: 234px;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 13px auto;
+            border-radius: 10px;
+
+      }
+
+      .container h1{
+        text-align: center;
+      }
+
+      .container button {
+        display: block;
+        width: 26%;
+        margin: auto;
+      }
+    </style>
+</head>
+<body>
+     <header class="header">
+
+        <div class="left">
+
+            <img src="img/icon.png" alt="">
+            <div>Gym Warrior</div>
+        </div>
+
+        <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        </div>
+
+        <div class="right">
+
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+          <div class="container">
+             <h1>Join the best gym ever</h1>
+             <form action="noaction.php">
+                <div class="form_group">
+                    <input type="text" name="" placeholder="Enter Your Name">
+                </div>
+
+                <div class="form_group">
+                    <input type="text" name="" placeholder="Enter Your Age">
+                </div>
+
+                <div class="form_group">
+                    <input type="text" name="" placeholder="Enter Your Gender">
+                </div>
+
+                <div class="form_group">
+                    <input type="text" name="" placeholder="Enter Your Locality">
+
+                </div class>
+                <button class="btn">Submit</button>
+             </form>
+          </div>
+     </header>
+</body>
+</html>
